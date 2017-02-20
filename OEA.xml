@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>OEA Remapping</name>
+    <appendix>For US QWERTY Keyboard</appendix>
+    <list>
+      <item>
+        <name>Preserved Shortcuts</name>
+        <identifier>private.OEA.remapping.shortcuts</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::Z, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L | ModifierFlag::NONE,
+          KeyCode::Z, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::Z, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+          KeyCode::Z, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::X, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+          KeyCode::X, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::C, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+          KeyCode::C, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::Y, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+          KeyCode::Y, ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::V, ModifierFlag::COMMAND_L | ModifierFlag::NONE,
+          KeyCode::V, ModifierFlag::COMMAND_L
+        </autogen>
+      </item>
+      <item>
+        <name>OEA US</name>
+        <identifier>private.Remap.OEA.US</identifier>
+        <autogen>__KeyToKey__ KeyCode::A, KeyCode::O</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, KeyCode::K</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, KeyCode::V</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, KeyCode::A</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, KeyCode::Q</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, KeyCode::I</autogen>
+        <autogen>__KeyToKey__ KeyCode::G, KeyCode::U</autogen>
+        <autogen>__KeyToKey__ KeyCode::H, KeyCode::G</autogen>
+        <autogen>__KeyToKey__ KeyCode::I, KeyCode::R</autogen>
+        <autogen>__KeyToKey__ KeyCode::J, KeyCode::H</autogen>
+        <autogen>__KeyToKey__ KeyCode::K, KeyCode::T</autogen>
+        <autogen>__KeyToKey__ KeyCode::L, KeyCode::S</autogen>
+        <autogen>__KeyToKey__ KeyCode::M, KeyCode::C</autogen>
+        <autogen>__KeyToKey__ KeyCode::N, KeyCode::D</autogen>
+        <autogen>__KeyToKey__ KeyCode::O, KeyCode::W</autogen>
+        <!-- <autogen>__KeyToKey__ KeyCode::P, KeyCode::P</autogen> -->
+        <autogen>__KeyToKey__ KeyCode::Q, KeyCode::X</autogen>
+        <autogen>__KeyToKey__ KeyCode::R, KeyCode::SEMICOLON</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, KeyCode::E</autogen>
+        <autogen>__KeyToKey__ KeyCode::T, KeyCode::F</autogen>
+        <autogen>__KeyToKey__ KeyCode::U, KeyCode::M</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, KeyCode::Y</autogen>
+        <autogen>__KeyToKey__ KeyCode::W, KeyCode::MINUS</autogen>
+        <autogen>__KeyToKey__ KeyCode::X, KeyCode::DOT</autogen>
+        <autogen>__KeyToKey__ KeyCode::Y, KeyCode::J</autogen>
+        <autogen>__KeyToKey__ KeyCode::Z, KeyCode::COMMA</autogen>
+        <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::BRACKET_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::Z</autogen>
+        <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, KeyCode::BRACKET_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::L</autogen>
+        <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::B</autogen>
+        <autogen>__KeyToKey__ KeyCode::EQUAL, KeyCode::BACKSLASH</autogen>
+        <autogen>__KeyToKey__ KeyCode::MINUS, KeyCode::EQUAL</autogen>
+        <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::N</autogen>
+      </item>
+      <item>
+        <name>Use OEA - QWERTY Mapping</name>
+        <appendix>Modifier Keys + Key in QWERTY
+          <!-- , but except in password -->
+        </appendix>
+        <identifier>private.option.OEA.preserve_modifier</identifier>
+        <modifier_not>
+          ModifierFlag::COMMAND_L,
+          ModifierFlag::COMMAND_R,
+          ModifierFlag::CONTROL_L,
+          ModifierFlag::CONTROL_R,
+          ModifierFlag::OPTION_L,
+          ModifierFlag::OPTION_R,
+          ModifierFlag::FN
+        </modifier_not>
+        <!-- <not>PASSWORD</not> -->
+      </item>
+    </list>
+  </item>
+</root>
